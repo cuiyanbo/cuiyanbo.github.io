@@ -299,22 +299,22 @@
 		</div>
 		<div class="form-group">
 			<label>Input Checkbox</label></br>
-			<input type="checkbox" name="input_chekbox" value="Input-CheckBox-1" value="C1">Value_1</button></br>
-			<input type="checkbox" name="input_chekbox" value="Input-CheckBox-2" value="C2" checked>Value_2</button>
+			<input type="checkbox" name="input_chekbox" value="C1">Value_1</button></br>
+			<input type="checkbox" name="input_chekbox" value="C2" checked>Value_2</button>
 		</div>
 		<div class="form-group">
 			<label>Input Radio</label></br>
-			<input type="radio" name="input_radio" value="Input Radio 1" value="R1">Radio_1</button></br>
-			<input type="radio" name="input_radio" value="Input Radio 2" value="R2" checked>Radio_2</button></br>
-			<input type="radio" name="input_radio" value="Input Radio 2" value="R2">Radio_3</button>
+			<input type="radio" name="input_radio" value="R1">Radio_1</button></br>
+			<input type="radio" name="input_radio" value="R2" checked>Radio_2</button></br>
+			<input type="radio" name="input_radio" value="R2">Radio_3</button>
 		</div>
 		<div class="form-group">
 			<label for="form_email_1">Email Address</label>
-			<input type="email" class="form-control" id="form_email_1" placeholder="Please Input Email Address!">
+			<input type="email" name="form_email_1" class="form-control" id="form_email_1" placeholder="Please Input Email Address!">
 		</div>
 		<div class="form-group">
 			<label for="form_password_1">Password</label>
-			<input type="password" class="form-control" id="form_password_1" placeholder="Please Input Password!">
+			<input type="password" name="form_password_1" class="form-control" id="form_password_1" placeholder="Please Input Password!">
 		</div>
 		<div class="form-group">
 			<label for="form_file_1">Select File</label>
@@ -326,12 +326,54 @@
 			<input type="checkbox" id="form_checkbox_1">Check Me
 		</label>
 		</div>
+
 		<div class="form-group">
-			<input type="submit" value="Submit" class="btn btn-default"></button>
+			<label for="form_url_1">Input URL</label>
+			<input type="url" name="form_url_1" class="form-control" id="form_url_1">
+		</div>
+		<div class="form-group">
+			<label for="form_number_1">Input Number</label>
+			<input type="number" name="form_number_1" class="form-control" id="form_number_1" min="0" max="10" step="2" value="4">
+		</div>
+		<div class="form-group">
+			<label for="form_range_1">Input Range</label>
+			<input type="range" name="form_range_1" class="form-control" id="form_range_1" min="0" max="100" step="2" value="4">
+		</div>
+		<div class="form-group">
+			<label for="form_date_local_1">Sel Datetime</label>
+			<input type="datetime-local" class="form-control" name="form_data_local_1" id="form_data_local_1">
+		</div>
+		
+		<div class="form-group">
+			<label for="form_input_group_1" class="sr-only">input_group</label>
+			<div class="input-group">
+				<div class="input-group-addon">$</div>
+				<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+				<div class="input-group-addon">#</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label>input
+			<select class="form-control" name="input_select_1">
+				<option>1122334</option>
+				<option>AABBCCD</option>
+				<option>aabbccd</option>
+				<option>Aabbccd</option>
+				<option>3344556</option>
+			</select>
+			</label>
+		</div>
+		
+		<div class="form-group">
+			<button type="submit" class="btn btn-default">Submit</button>
 			<label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
-			<input type="reset" value="Reset" class="btn btn-default"></button>
+			<button type="reset" class="btn btn-default">Reset</button>
 		</div>
 	</form>
+	
+	
+	<h1>11.Button<small></small></h1>
 	
 	</div>
 	</body>
